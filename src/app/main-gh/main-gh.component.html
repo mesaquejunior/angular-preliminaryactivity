@@ -1,0 +1,12 @@
+<main>
+  <ul>
+    <li *ngFor="let repository of repositories">
+      <img src={{repository.owner.avatar_url}} alt="Facebook - {{repository.name}}" />
+      <span>
+          <strong>{{ repository.name }}</strong>
+          <p>{{ repository.description }}</p>
+          <a href={{repository.svn_url}} target="_blank">Acesso ao repositório</a>
+      </span>
+    </li>
+  </ul>
+</main>
